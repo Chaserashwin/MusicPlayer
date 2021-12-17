@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+body{
+    background-color: rgb(0, 0, 0);
+}
+body ul li{
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Zen Kurenaido', sans-serif;
+    color:white;
+
+}
+nav ul{
+    display:flex;   
+    list-style-type: none;
+    height: 54px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-around;
+}
+.nav_centre{
+    display: flex;
+    align-items: center;
+    /* margin-left: 3em; */
+}
+nav ul li{
+    margin: 25px 0px 9px -9px;
+    padding:0px 55px;
+    font-weight: 600;
+    font-size: 29px;
+    
+
+}
+.brand img{
+    width: 69px;
+    padding:6px 8px;
+    border-radius: 15rem;
+    margin: 10px 0px 9px -9px;
+}
+.brand{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 25px 0px 9px -9px;
+}
+.container{
+    background-color: rgb(0, 0, 0);
+    margin: 3px;
+}
+.container1{
+    margin: 17px auto;
+    /* mtlb top aur bottom se 23px and side se auto centre */
+    padding: 10px;
+    /* taaki content ander chla jaye */
+    border: 3px solid black;
+    border-radius: 11px;
+    height: 43vh;
+    width: auto;
+    background-color: rgb(255, 218, 9);
+    color: rgb(119, 84, 84);
+    font-family: 'Zen Kurenaido', sans-serif;
+    
+    
+}
+.container2{
+    margin: 17px auto;
+    /* mtlb top aur bottom se 23px and side se auto centre */
+    padding: 10px;
+    /* taaki content ander chla jaye */
+    border: 3px solid black;
+    border-radius: 11px;
+    height: 43vh;
+    width: auto;
+    background-color: rgb(59, 25, 25);
+    color: white;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+
+.container3{
+    margin: 17px auto;
+    /* mtlb top aur bottom se 23px and side se auto centre */
+    padding: 10px;
+    /* taaki content ander chla jaye */
+    border: 3px solid black;
+    border-radius: 11px;
+    height: 43vh;
+    width: auto;
+    background-color: rgb(223, 52, 9);
+    color: white;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.bottom{
+    position:sticky;
+    bottom: 0;
+    /* it is important to include bottom to stick any bar */
+    height: 100px;
+    background-color: black;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 23px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myprogressbar{
+    width: 80vw ;
+    cursor: pointer;
+
+}
+.songItemcontainer{
+    margin: 10px;
+    height: 35vh;
+    /* width: 23vw; */
+    display: flex;
+    /* flex-direction: row; */
+    /* background-color: white; */
+    border-radius: 10px;
+    justify-content: space-around;                      
+}
+.songItem1 img{
+    align-items: center;
+    justify-content: center;                    
+    width: 28vh;
+    margin: 0px 2px;
+    border-radius: 7px;
+}
+.songItem1 p{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0px 3px 0px 3px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(185, 28, 28);
+    cursor: pointer;
+}
+
+.songItem2 img{
+    align-items: center;
+    justify-content: center;                    
+    width: 28vh;
+    margin: 0px 2px;
+    border-radius: 7px;
+}
+.songItem2 p{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0px 20px 0px 25px;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.songItem3 p{
+    margin: -9px 58px 0px 64px;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+.songItem3 img{
+    align-items: center;
+    justify-content: center;
+    width: 14vw;
+    margin: 15px 34px;
+    border-radius: 132px;
+    cursor: pointer;
+}
+
+.timestamp{
+    
+    display: flex;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+/* .songbar songfav{
+    display:grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+
+} */
+
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+    /* jab opacity '1' hogi toh gif play hoga aur jab '0' hogi toh nhi hoga; */
+}
