@@ -70,7 +70,7 @@ Array.from(document.getElementsByClassName('songName')).forEach((element)=>{
         console.log(e.target);
         e.target.classList.remove('songName');
         e.target.classList.add('songName');
-        audioElement.src = `songs/${songIndex}.mp3`;
+        audioElement.src = `${songIndex}.mp3`;
         masterSongName.innerText=songs[songIndex-1].songName;
         audioElement.currentTime=0;
         audioElement.play();
@@ -88,7 +88,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     else{
         songIndex += 1;
     }
-    audioElement.src=`songs/${songIndex}.mp3`;
+    audioElement.src=`${songIndex}.mp3`;
     masterSongName.innerText=songs[songIndex-1].songName;
     audioElement.currentTime=0;
     audioElement.play();
@@ -104,7 +104,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     else{
         songIndex -= 1;
     }
-    audioElement.src=`songs/${songIndex}.mp3`;
+    audioElement.src=`${songIndex}.mp3`;
     masterSongName.innerText=songs[songIndex-1].songName;
     audioElement.currentTime=0;
     audioElement.play();
